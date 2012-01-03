@@ -3,16 +3,20 @@ Description
 This project aims to implement a music compiler text-based musical composition inputs similar to 
 [ABC notation](http://en.wikipedia.org/wiki/ABC_notation "ABC Notation").
 
-In this project, I used JFugue, a famous java MIDI generation library, cross-translating a java 
-file for JFugue input via Flex and GNU-Bison and then generate the output MIDI from it.
+In this project, I used [JFugue](http://www.jfugue.org/ "JFugue"), a famous java MIDI generation 
+library, cross-translating a java file for JFugue input via Flex and GNU-Bison and then generate 
+the output MIDI from it.
 
-Build: 
+Build:
+
     $ make
 
 Generate middle Java translation file (Score.java):
+
     $ ./music-compiler < [input-file]
 
 Generate MIDI: 
+
     $ sh run.sh
     
 Input File Structure
@@ -51,7 +55,7 @@ duration.
   type of duration in my program; whole (w), half (h), quarter (q), eighth (i), sixteenth (s), 
   thirtysecond (t), sixty-fourth (x). 
   
-A Sample Input:
+A Sample Input would be:
 
     { 
       play save
